@@ -1,0 +1,44 @@
+First you'll have to make sure that python is installed on your computer so type in:
+python --version into your command line
+if you aren't sure how to get to your command line then go to your computer search and type in CMD which should give you the option
+
+now you'll have to create a virtual environment for django so that you don't have to worry about any dependencies.  
+THIS WILL ALSO BE DONE ON THE COMMAND LINE.  I've typed below your step by step commands to install for windows:
+
+1. python -m pip install -U pip
+2. pip install virtualenv
+
+NOW CREATE A NAME FOR YOUR VIRTUAL ENVIRONMENT
+
+1. virtualenv virtenv_site1 ...this can be whatever you want really
+
+enter your new directory
+2. cd virtenv_site1
+
+check out what files are in it
+3. dir
+
+enter the scripts folder
+4. cd Scripts
+
+run the activate EXE
+5. activate
+
+install django
+6. pip install django
+7. python
+8. import django
+9. django.get_version()
+
+make sure to type the () at the end of your installation
+10. quit()
+
+enter your sample site and start your project
+11. cd ..
+12. django-admin startproject sampsite
+13. cd sampsite
+
+RUN YOUR SAMPLE DJANGO SERVER
+14. python manage.py runserver
+
+YOU'RE DONE...you now have django installed
